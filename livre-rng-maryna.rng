@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<element name ="bibliotheque" xmlns="http://relaxng.org/ns/structure/1.0"
+    datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    <oneOrMore>
+    <element name ="etagere">
+        <attribute name="type">
+            <data type="string"></data>
+        </attribute>
+        <oneOrMore>
+        <element name="livre">
+            <group>
+                <attribute name="isbn">
+                    <data type="integer"></data>
+            </attribute>
+                <attribute name ="prix">
+                    <data type="float"></data>
+            </attribute>
+            </group>
+            <group>
+                <element name ="titre">
+                    <data type="string"></data>
+            </element>
+            <element name="auteur">
+                <attribute name="nom">
+                    <data type="string"></data>
+                </attribute>
+                <attribute name="prenom">
+                    <data type="string"></data>
+                    </attribute>
+             </element> 
+            </group>
+        </element>
+        <element name="livre">
+            <group>
+            <attribute name="isbn">
+                <data type="integer"></data>
+            </attribute>
+            <attribute name ="prix">
+                <data type="float"></data>
+            </attribute>
+            </group>
+            <group>
+            <element name ="titre">
+                <data type="string"></data>
+            </element>
+            <element name="auteur">
+                <data type="string"></data>
+            </element>
+            </group>
+                <element name="nom">
+                    <data type="string"></data>
+                </element>
+                <element name="prenom">
+                    <data type="string"></data>
+                </element>
+        </element>
+        </oneOrMore>
+    </element>
+    
+    <element name="etagere">
+        <group>
+        <attribute name="type">
+            <data type="string"></data>
+        </attribute>
+        <attribute name="poussiere">
+            <data type="boolean"></data>
+        </attribute>
+        </group>
+        <element name="livre">
+            <group>
+            <attribute name="isbn">
+                <data type="integer"></data>
+            </attribute>
+            <attribute name ="prix">
+                <data type="float"></data>
+            </attribute>
+            </group>
+            <element name="titre">
+                <data type="string"></data>
+            </element>
+            <element name="auteur">
+                <attribute name="nom">
+                    <data type="string"></data>
+                    <element name="nom">
+                        <data type="string"></data>
+                    </element>
+                </attribute>
+            </element>
+        </element>
+    </element>
+    <element name="etagere">
+        <group>
+        <attribute name="type">
+            <data type="string"></data>
+        </attribute>
+        <attribute name="poussiere">
+            <data type="boolean"></data>
+        </attribute>
+        </group>
+    </element>
+    </oneOrMore>
+</element>

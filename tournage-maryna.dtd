@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT data (ENTREE*)>
+<!ELEMENT ENTREE (Titre*,Realisateur*, Adresse*, Organisme_Demandeur*, Type_de_tournage*, Arrondissement*, Date_debut*, Date_fin*,xy*)>
+<!ELEMENT Titre (#PCDATA)>
+<!ELEMENT Realisateur (#PCDATA)>
+<!ELEMENT Adresse (#PCDATA)>
+<!ELEMENT Organisme_Demandeur (#PCDATA)>
+<!ELEMENT Type_de_tournage (#PCDATA)>
+<!ELEMENT Arrondissement (#PCDATA)>
+<!ELEMENT Date_debut (#PCDATA)>
+<!ELEMENT Date_fin (#PCDATA)>
+<!ELEMENT xy (#PCDATA)>
