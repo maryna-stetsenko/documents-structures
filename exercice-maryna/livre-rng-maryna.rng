@@ -82,10 +82,12 @@
             <element name="auteur">
                 <attribute name="nom">
                     <data type="string"></data>
-                    <element name="nom">
-                        <data type="string"></data>
-                    </element>
                 </attribute>
+                <element name="nom">
+                    <data type="string"></data>
+                 
+                </element>
+                
             </element>
         </element>
     </element>

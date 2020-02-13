@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?xml-model href="exercice-livres.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <bibliotheque>
     <etagere type="sf">
         <livre isbn="001" prix="15.99">
@@ -18,11 +16,13 @@
     <etagere type="gothique" poussiere="true">
         <livre isbn="003" prix="5.58">
             <titre>Le Château d'Otrante</titre>
-            <auteur>
-                <prenom>Horace</prenom>
-                <nom>Walpole</nom>
-            </auteur>
+            
+            
+            
+            
+            <auteur nom="Walpole">    <nom>Walpole</nom>    </auteur>
         </livre>
     </etagere>
     <etagere type="romance" poussiere="false"/>
 </bibliotheque>
+
